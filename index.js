@@ -3,13 +3,13 @@ const ourItemDiv = document.getElementsByClassName('item');
 const openIcon = document.getElementsByClassName('iconOpen');
 const closeIcon = document.getElementsByClassName('iconClose');
 
-console.log((ourItemDiv));
+// console.log((ourItemDiv));
 
 for (let i = 0; i<ourItemDiv.length; i++){
     // for (let i = ourItemDiv.length-1; i>=0; i--){
 
     
-
+    closeIcon[i].style.display = 'none';
 
     ourItemDiv[i].addEventListener('click', () =>{
        const result = ourItemDiv[i].classList.toggle('active');
